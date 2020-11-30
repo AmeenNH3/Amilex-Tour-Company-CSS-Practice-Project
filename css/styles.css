@@ -18,12 +18,15 @@ Variables
   --clr-primary-3: hsl(185, 81%, 29%);
   --clr-primary-4: hsl(184, 77%, 34%);
   /* primary/main color */
-  --clr-primary-5: hsl(185, 62%, 45%);
+  /* --clr-primary-5: hsl(185, 62%, 45%); */
+  --clr-primary-5: #da5552;
+
   --clr-primary-05: hsl(359, 68%, 52%);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
   --clr-primary-7: hsl(184, 65%, 59%);
-  --clr-primary-8: hsl(184, 80%, 74%);
+  /* --clr-primary-8: hsl(184, 80%, 74%); */
+  --clr-primary-8:  rgb(228, 177, 171);
   --clr-primary-9: hsl(185, 94%, 87%);
   --clr-primary-10: hsl(186, 100%, 94%);
   /* darkest grey - used for headings */
@@ -217,7 +220,7 @@ Hero
 }
 @media screen and (min-width:568px){
   .hero{
-    background: linear-gradient(rgba(44, 174, 186, 0.7),rgba(0, 0, 0, 0.7)),url("../images/main.jpeg") center/cover no-repeat;
+    background: linear-gradient(rgba(186, 44, 44, 0.7),rgba(0, 0, 0, 0.7)),url("../images/bg-secondary.jpg") center/cover no-repeat;
   }
   .hero-banner{
     padding: 0;
@@ -509,3 +512,45 @@ Gallery
 Footer
 ===============
 */
+.footer{
+  background: var(--clr-grey-1);
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+}
+.footer-links, .footer-icons{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+
+}
+
+.footer-link{
+  color: white;
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-right: 1rem;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+}
+.footer-link:hover{
+  color: var(--clr-primary-5);
+}
+
+.footer-icon{
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--clr-primary-8);
+
+}
+.footer-icon:hover{
+  color: var(--clr-primary-5);
+}
+.copyright{
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  color: var(--clr-white);
+  opacity: 0.7;
+}
